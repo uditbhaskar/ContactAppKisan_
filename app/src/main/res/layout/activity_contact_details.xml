@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_details"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_details"
+        android:orientation="vertical"
+        android:background="@drawable/contact_item_view_background">
+        <TextView
+            android:id="@+id/details_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="15dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:text="First Name, Last Name"
+            android:textSize="20sp"
+            android:background="@drawable/contact_item_view_background"/>
+        <TextView
+            android:id="@+id/details_contact_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:text="Mobile Number"
+            android:textSize="20sp"
+            android:background="@drawable/contact_item_view_background"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="150dp"
+        android:paddingStart="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="9dp"
+        android:src="@drawable/ic_sent_yellow"
+        android:background="@drawable/contact_item_view_background"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

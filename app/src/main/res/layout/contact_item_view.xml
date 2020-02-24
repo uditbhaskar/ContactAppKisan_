@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="12dp"
+    android:background="@drawable/contact_item_view_background">
+    <TextView
+        android:id="@+id/name_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FirstName, LastName"
+        android:paddingStart="35dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>
